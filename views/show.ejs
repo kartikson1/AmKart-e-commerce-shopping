@@ -1,0 +1,25 @@
+<%- include ("./partials/header") %>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="thumbnail">
+            <img class="img-responsive" id="showpg_img" src="<%= item.image %>">
+            <div class="caption-full">
+                <h2 class="pull-right">₹ <%= item.cost %></h2>
+                <h1><a><%=item.product_name%></a></h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="list-group">
+            <li class="list-group-item">Descripton:
+                <p><%=item.description%></p></li>
+            <li class="list-group-item">Stock available: <%=item.stock%> </li>
+            <li class="list-group-item">Category: <%=item.category%></li>
+        </div>
+        <a href="#" class="btn btn-success btn-lg"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+    </div>
+</div>
+
+<%- include ("./partials/footer") %>
